@@ -17,7 +17,15 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    # 新增： Sphinx 支持 Markdown（myst）
+    'myst_parser',
 ]
+
+# Sphinx：.rst 和 .md 都是文档源文件
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
