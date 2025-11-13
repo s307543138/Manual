@@ -18,6 +18,4 @@ Contents
 
 .. toctree::
 
-   usage
-   api
    manual_with_images
