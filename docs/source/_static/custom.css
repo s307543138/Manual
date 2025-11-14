@@ -1,74 +1,61 @@
 /* ===============================
-   KRANENDONK / RinasWeld Theme for Furo
+   KRANENDONK / RinasWeld theme
+   for pydata-sphinx-theme
    =============================== */
 
-/* ---- Brand colors ---- */
+/* 品牌主色：KRANENDONK 蓝 */
 :root {
-    --color-brand-primary: #0063ba;
-    --color-brand-content: #0063ba;
-    --color-brand-highlight: #004f94; /* darker shade for hover */
+    --pst-color-primary: #0063ba;
+    --pst-color-primary-text: #ffffff;
+    --pst-color-secondary: #131e2e;
 
-    --color-background-primary: #ffffff;
-    --color-background-secondary: #eaeef2;
+    --pst-color-surface: #ffffff;
+    --pst-color-on-surface: #131e2e;
 
-    --color-text-primary: #131e2e;  /* deep professional blue-black */
-    --color-text-secondary: #4a5568;
+    --pst-color-background: #ffffff;
+    --pst-color-on-background: #131e2e;
+
+    --pst-color-border: #eaeef2;
 }
 
-/* ---- Make content area wider (for desktop) ---- */
-.wy-nav-content, .content {
-    max-width: 100% !important;
-}
-
-/* ---- Sidebar adjustments ---- */
-.sidebar-drawer .sidebar-brand-text {
-    font-weight: 700;
-    color: #0063ba;
-}
-
-.sidebar-drawer a {
-    color: #131e2e;
-}
-
-.sidebar-drawer a:hover {
-    color: #0063ba;
-}
-
-/* ---- Links ---- */
+/* 链接颜色 */
 a, a:visited {
     color: #0063ba;
 }
-
 a:hover {
     color: #004f94;
 }
 
-/* ---- Notes / warnings color style ---- */
+/* Note / 提示框使用品牌色 */
 .admonition {
     border-left: 4px solid #0063ba;
     background-color: #eaeef2;
 }
-
 .admonition-title {
     background-color: #0063ba;
     color: #ffffff;
 }
 
-/* ---- Tables ---- */
+/* 内容区域尽量宽一点（大屏阅读更舒服） */
+.bd-main .bd-content {
+    max-width: 100%;
+}
+
+/* 表格自动换行，避免撑爆页面 */
 table.docutils td, table.docutils th {
     white-space: normal !important;
     word-break: break-word !important;
 }
 
-/* ---- Prevent image blur (do not upscale) ---- */
+/* 图片只缩小不放大，避免变糊 */
 img {
-    max-width: 100%;     /* Only shrink, never enlarge */
+    max-width: 100%;
     height: auto;
 }
 
-/* ---- Optional: make the KRANENDONK logo white when in dark mode ---- */
+/* 深色模式下 logo 自动反白（可选，如果 logo 是深色） */
 @media (prefers-color-scheme: dark) {
-    .logo {
-        filter: brightness(0) invert(1); /* auto white version */
+    .navbar-brand img {
+        filter: brightness(0) invert(1);
     }
 }
