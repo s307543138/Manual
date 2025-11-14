@@ -36,9 +36,10 @@ a:hover {
     color: #ffffff;
 }
 
-/* 内容区域尽量宽一点（大屏阅读更舒服） */
+/* 内容区域不要太宽，保持一点“书页感” */
 .bd-main .bd-content {
-    max-width: 100%;
+    max-width: 1000px;   /* 或 900px / 1100px 自选 */
+    margin: 0 auto;      /* 居中 */
 }
 
 /* 表格自动换行，避免撑爆页面 */
@@ -51,6 +52,13 @@ table.docutils td, table.docutils th {
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* 控制导航栏里 logo 大小 */
+.navbar-brand img {
+    max-height: 36px;   /* 你可以试 32 / 40，看自己喜欢 */
+    height: auto;
+    width: auto;
 }
 
 /* 深色模式下 logo 自动反白（可选，如果 logo 是深色） */
