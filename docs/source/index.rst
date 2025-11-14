@@ -34,4 +34,4 @@ Contents
 
 .. toctree::
 
-   manual_with_images
+    RinasWeld Manual<manual_with_images>
