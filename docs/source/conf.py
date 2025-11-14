@@ -11,6 +11,7 @@ version = '1.0.0'
 
 html_title = "RinasWeld Offline Manual"
 html_short_title = "RinasWeld Manual"
+html_logo = "_static/Logo plain.png"
 
 # -- General configuration
 
